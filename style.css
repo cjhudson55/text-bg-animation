@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.background-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 300px;
+    letter-spacing: 20px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url('cake2.jpg');
+    background-size: 120%;
+    /* text-shadow: -1px 3px 7px rgba(0, 0, 0, .63); */
+    animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+}
+
+/* keyframes for the animation */
+@keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+}
